@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Jorgy.Intervals</id>
-    <version>0.1.0</version>
+    <version>0.1.1</version>
     <title>Intervals.NET</title>
     <description>A simple .net library for working with intervals of comparable types.</description>
     <authors>Alex Jorgenson</authors>
