@@ -3,9 +3,13 @@
   <metadata>
     <id>Jorgy.Intervals</id>
     <version>0.1.0</version>
-    <title>Jorgy.Intervals</title>
-    <description>Jorgy.Intervals</description>
+    <title>Intervals.NET</title>
+    <description>A simple .net library for working with intervals of comparable types.</description>
     <authors>Alex Jorgenson</authors>
+    <tags>Interval Intervals</tags>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <copyright>Copyright 2015 Alex Jorgenson</copyright>
+    <projectUrl>https://github.com/jorgy343/Intervals</projectUrl>
   </metadata>
   <files>
     <file src="bin\Release\Jorgy.Intervals.dll" target="lib\portable-net4+sl50+netcore45+wpa81+wp8" />
