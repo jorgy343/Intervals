@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Jorgy.Invervals
+namespace Jorgy.Intervals
 {
     public struct MaximumEndpoint<T> : IComparable<MaximumEndpoint<T>>, IEquatable<MaximumEndpoint<T>>
         where T : IComparable<T>

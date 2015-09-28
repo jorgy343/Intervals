@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Jorgy.Invervals
+namespace Jorgy.Intervals
 {
     public struct MinimumEndpoint<T> : IComparable<MinimumEndpoint<T>>, IEquatable<MinimumEndpoint<T>>
             where T : IComparable<T>

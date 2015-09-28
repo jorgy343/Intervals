@@ -1,4 +1,4 @@
-﻿namespace Jorgy.Invervals
+﻿namespace Jorgy.Intervals
 {
     public enum IntervalExclusivity : byte
     {

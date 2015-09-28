@@ -1,0 +1,15 @@
+﻿<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Jorgy.Intervals</id>
+    <version>0.1.0</version>
+    <title>Jorgy.Intervals</title>
+    <description>Jorgy.Intervals</description>
+    <authors>Alex Jorgenson</authors>
+  </metadata>
+  <files>
+    <file src="bin\Release\Jorgy.Intervals.dll" target="lib\portable-net4+sl50+netcore45+wpa81+wp8" />
+    <file src="bin\Release\Jorgy.Intervals.pdb" target="lib\portable-net4+sl50+netcore45+wpa81+wp8" />
+    <file src="bin\Release\Jorgy.Intervals.xml" target="lib\portable-net4+sl50+netcore45+wpa81+wp8" />
+  </files>
+</package>

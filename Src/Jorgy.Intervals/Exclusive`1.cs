@@ -1,11 +1,11 @@
 ﻿using System;
 
-namespace Jorgy.Invervals
+namespace Jorgy.Intervals
 {
-    public struct Inclusive<T>
+    public struct Exclusive<T>
         where T : IComparable<T>
     {
-        public Inclusive(T value)
+        public Exclusive(T value)
         {
             Value = value;
         }

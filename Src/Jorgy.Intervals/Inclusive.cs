@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Jorgy.Invervals
+namespace Jorgy.Intervals
 {
     public static class Inclusive
     {
