@@ -50,13 +50,10 @@ namespace Jorgy.Intervals
 
         public override bool Equals(object obj)
         {
-            if (obj == null)
+            if (!(obj is MinimumEndpoint<T> o))
                 return false;
 
-            if (!(obj is MinimumEndpoint<T>))
-                return false;
-
-            return this == (MinimumEndpoint<T>)obj;
+            return this == o;
         }
 
         public override int GetHashCode()

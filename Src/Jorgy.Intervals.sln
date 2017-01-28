@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26020.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jorgy.Intervals", "Jorgy.Intervals\Jorgy.Intervals.csproj", "{C8966FEE-FF2E-46D8-BA63-8FD47AB14293}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jorgy.Intervals.Tests", "Jorgy.Intervals.Tests\Jorgy.Intervals.Tests.csproj", "{3748792F-4A71-4C92-9A9E-0A0E396C4CA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jorgy.Intervals.IntelliTests", "Jorgy.Intervals.IntelliTests\Jorgy.Intervals.IntelliTests.csproj", "{1225F503-A668-4AB3-A9C9-EE3C1CA2BEB7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{3748792F-4A71-4C92-9A9E-0A0E396C4CA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3748792F-4A71-4C92-9A9E-0A0E396C4CA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3748792F-4A71-4C92-9A9E-0A0E396C4CA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1225F503-A668-4AB3-A9C9-EE3C1CA2BEB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1225F503-A668-4AB3-A9C9-EE3C1CA2BEB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1225F503-A668-4AB3-A9C9-EE3C1CA2BEB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1225F503-A668-4AB3-A9C9-EE3C1CA2BEB7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

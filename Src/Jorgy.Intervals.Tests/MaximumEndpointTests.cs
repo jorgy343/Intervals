@@ -1,32 +1,30 @@
-﻿using System;
-using Jorgy.Intervals;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Jorgy.Intervals.Tests
 {
     [TestClass]
     public class MaximumEndpointTests
     {
-        private Tuple<int, MinimumEndpoint<int>>[] _minimumEndpointsFromSmallToLarge = new[]
+        private (int value, MinimumEndpoint<int> endpoint)[] _minimumEndpointsFromSmallToLarge = new[]
         {
-            Tuple.Create(0, MinimumEndpoint<int>.Infinity),
-            Tuple.Create(1, new MinimumEndpoint<int>(4, IntervalExclusivity.Inclusive)),
-            Tuple.Create(2, new MinimumEndpoint<int>(4, IntervalExclusivity.Exclusive)),
-            Tuple.Create(3, new MinimumEndpoint<int>(5, IntervalExclusivity.Inclusive)),
-            Tuple.Create(4, new MinimumEndpoint<int>(5, IntervalExclusivity.Exclusive)),
-            Tuple.Create(5, new MinimumEndpoint<int>(6, IntervalExclusivity.Inclusive)),
-            Tuple.Create(6, new MinimumEndpoint<int>(6, IntervalExclusivity.Exclusive))
+            (0, MinimumEndpoint<int>.Infinity),
+            (1, new MinimumEndpoint<int>(4, IntervalExclusivity.Inclusive)),
+            (2, new MinimumEndpoint<int>(4, IntervalExclusivity.Exclusive)),
+            (3, new MinimumEndpoint<int>(5, IntervalExclusivity.Inclusive)),
+            (4, new MinimumEndpoint<int>(5, IntervalExclusivity.Exclusive)),
+            (5, new MinimumEndpoint<int>(6, IntervalExclusivity.Inclusive)),
+            (6, new MinimumEndpoint<int>(6, IntervalExclusivity.Exclusive))
         };
 
-        private Tuple<int, MaximumEndpoint<int>>[] _maximumEndpointsFromSmallToLarge = new[]
+        private (int value, MaximumEndpoint<int> endpoint)[] _maximumEndpointsFromSmallToLarge = new[]
         {
-            Tuple.Create(1, new MaximumEndpoint<int>(4, IntervalExclusivity.Inclusive)),
-            Tuple.Create(2, new MaximumEndpoint<int>(4, IntervalExclusivity.Exclusive)),
-            Tuple.Create(3, new MaximumEndpoint<int>(5, IntervalExclusivity.Inclusive)),
-            Tuple.Create(4, new MaximumEndpoint<int>(5, IntervalExclusivity.Exclusive)),
-            Tuple.Create(5, new MaximumEndpoint<int>(6, IntervalExclusivity.Inclusive)),
-            Tuple.Create(6, new MaximumEndpoint<int>(6, IntervalExclusivity.Exclusive)),
-            Tuple.Create(7, MaximumEndpoint<int>.Infinity)
+            (1, new MaximumEndpoint<int>(4, IntervalExclusivity.Inclusive)),
+            (2, new MaximumEndpoint<int>(4, IntervalExclusivity.Exclusive)),
+            (3, new MaximumEndpoint<int>(5, IntervalExclusivity.Inclusive)),
+            (4, new MaximumEndpoint<int>(5, IntervalExclusivity.Exclusive)),
+            (5, new MaximumEndpoint<int>(6, IntervalExclusivity.Inclusive)),
+            (6, new MaximumEndpoint<int>(6, IntervalExclusivity.Exclusive)),
+            (7, MaximumEndpoint<int>.Infinity)
         };
 
         [TestMethod]

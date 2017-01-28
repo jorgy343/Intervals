@@ -50,13 +50,10 @@ namespace Jorgy.Intervals
 
         public override bool Equals(object obj)
         {
-            if (obj == null)
+            if (!(obj is MaximumEndpoint<T> o))
                 return false;
 
-            if (!(obj is MaximumEndpoint<T>))
-                return false;
-
-            return this == (MaximumEndpoint<T>)obj;
+            return this == o;
         }
 
         public override int GetHashCode()
@@ -168,6 +165,9 @@ namespace Jorgy.Intervals
 
         public static bool operator >=(MaximumEndpoint<T> left, MaximumEndpoint<T> right)
         {
+            // *]*
+            // )**
+
             // Treat infinity as you would on the extended real number line.
             if (left.IsInfinity && right.IsInfinity)
                 return true;
@@ -188,7 +188,7 @@ namespace Jorgy.Intervals
                     return true;
 
                 // If the left is exclusive and the right is inclusive and both values are equal, the left is larger than the right.
-                if (left.Exclusivity == IntervalExclusivity.Exclusive && right.Exclusivity == IntervalExclusivity.Inclusive)
+                if (left.Exclusivity == IntervalExclusivity.Inclusive && right.Exclusivity == IntervalExclusivity.Exclusive)
                     return true;
             }
 
